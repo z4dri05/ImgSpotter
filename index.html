@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ImgSpotter</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Image Spotter</h1>
+      <p>Select a folder (this will show subfolders too) to detect and display images</p>
+    </header>
+    <label for="fileInput" id="customFileInput">Choose Folder</label>
+    <input type="file" id="fileInput" webkitdirectory multiple>
+    <div id="imageContainer"></div>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <div id="lightbox-nav">
+        <span id="lightbox-prev" onclick="navigateImages(-1)">&#8249;</span>
+        <span id="lightbox-next" onclick="navigateImages(1)">&#8250;</span>
+      </div>
+      <img id="lightbox-image" class="lightbox-image" alt="lightbox-image">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<a href="https://github.com/z4dri05/ImgSpotter.git" target="_blank" id="github-link" class="github-link">
+  <img src="github-logo.png" alt="GitHub Icon" class="github-icon">
+</a>
