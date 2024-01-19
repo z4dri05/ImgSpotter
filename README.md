@@ -14,7 +14,7 @@ Follow these steps to get ImgSpotter up and running on your local machine.
 
 ### Prerequisites
 
-- A web browser?
+- A web browser? and Windows Client not tested on linux
 
 ### Installation
 
